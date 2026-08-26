@@ -1,5 +1,5 @@
-• A shared information-value protocol (baseline, event score, ceiling, failure locus) for rivers and shelf oxygen.
-• Upstream gauges are not universally useful: James ΔNSE +0.13 vs Willamette ≈ 0; Verde LSTM loses to routing.
-• Weekly river skill is capped by precipitation foresight (oracle ΔNSE +0.20 at 7 days, ~0 at 1 day).
-• Shelf oxygen Transformer beats climatology at 1 month; hybrid/climatology wins at 2–3 months; Argo history +35% RMSE.
-• Coastal residuals, not SST fronts, dominate error on the development cube; no new architecture claimed.
+• Protocol: domain baseline, event score, information ceiling, failure locus.
+• Gauge value is climate-conditional: James ΔNSE +0.13 vs Willamette ~0.
+• Verde LSTM loses to linear routing (NSE 0.39 versus 0.61).
+• Oracle rain adds ~0 NSE at 1 day but +0.20 at 7 days.
+• Oxygen Transformer wins at 1 month; climatology takes over later.
