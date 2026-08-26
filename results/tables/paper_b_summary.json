@@ -1,0 +1,17 @@
+{
+  "claim": "mid-range skill is capped by missing information, not model class",
+  "river_oracle_delta_NSE": {
+    "1": -0.001,
+    "3": 0.121,
+    "7": 0.196
+  },
+  "river_attn_CSI": {
+    "1": 0.75,
+    "3": 0.288,
+    "7": 0.26
+  },
+  "ocean_lead1_ST_RMSE": 3.876,
+  "ocean_lead2_hybrid_RMSE": 5.083,
+  "shap_top_channel": "Q_target",
+  "coastal_high_mae": 3.299
+}

@@ -4,7 +4,8 @@ Standalone repository for **Paper B**. Clone and run — frozen tables live in `
 
 [![pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://az0998.github.io/forecast-information-value/)
 
-**Target journal:** *Ecological Informatics* (or *AIES* if ocean-led)  
+**Target journal:** *Ecological Informatics* (or *AIES* if ocean-led with GOBAI)  
+**Status:** four-panel plate + English draft in `paper/manuscript_draft.md`  
 **Do not resubmit to HSJ / JHRS / Journal of Hydrology / Water (MDPI).**  
 **Author:** Senjie Zhang, Lanzhou University (`3079099853@qq.com`)
 

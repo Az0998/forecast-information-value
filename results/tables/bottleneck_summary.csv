@@ -1,3 +1,3 @@
 domain,bottleneck,evidence
-river,usable precipitation foresight + unsaturated autocorrelation,James 1-d ablation ΔNSE +0.13; Willamette ~0; Verde LSTM can lose to routing
-ocean,time-varying oxygen / coastal structure at lead ≥2 months,lead-1 ST beats clim; lead-2 hybrid/clim wins; Argo history +35% RMSE
+river,precipitation foresight after day 1; climate-conditional gauge value,"Oracle precip ΔNSE ≈ 0 at 1 d, +0.12 at 3 d, +0.20 at 7 d; James ΔNSE +0.13, Willamette ≈ 0; Verde LSTM NSE 0.39 < routing 0.61"
+ocean,learned anomaly skill collapses at lead ≥ 2 months; errors concentrate coastally,Lead-1 ST RMSE 3.88 vs clim 5.30; lead-2 hybrid 5.08 ≈ clim 5.23; Argo +35% RMSE; coastal MAE 3.30 vs 2.95 offshore

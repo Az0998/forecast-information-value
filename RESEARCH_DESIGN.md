@@ -1,26 +1,12 @@
-# Paper B research design (queued)
+# Paper B — in progress
 
-## Why this is not the HSJ manuscript again
+Four-panel plate and EcoInf draft are in `paper/` and `results/figures/`.
 
-HSJ read a regional case study with standard techniques. The fused B paper is only viable if every main figure answers:
+Remaining (optional before submit):
 
-> Relative to a **simple domain baseline**, where does learned forecast add decision skill, and which **missing information** caps that skill?
+- [ ] GOBAI-O2 if targeting AIES instead of EcoInf
+- [ ] One non-US river on the same climate protocol (general significance)
+- [ ] Paste `manuscript_draft.md` into the Ecological Informatics Word/LaTeX template
+- [ ] English proofread
 
-If a panel only shows NSE on Potomac, it does not belong.
-
-## Figure list (target)
-
-1. **Bottleneck cartoon** — QPF ceiling (river) vs climatology takeover (ocean lead-2/3).  
-2. **Event skill** — river P90 CSI vs lead; ocean hypoxia F1 vs lead.  
-3. **Conditional value** — climate-zone upstream ΔNSE (James large, Willamette ~0, Verde unstable).  
-4. **Failure map** — ECS western shelf / 50 dbar (already `eval_failure_modes`).  
-
-## Do not do
-
-- New attention variant.  
-- One model trained on discharge and oxygen.  
-- Mention of HSJ/Water rejections in the cover letter.
-
-## GOBAI
-
-If B is AIES-led, GOBAI-O2 on the ECS subset is the highest-value unpaid experiment. If B is EcoInf-led, keep the WOA-informed cube in Limitations and lean on the river climate-zone transfer for “general significance.”
+Do not add a new network. Do not resubmit to HSJ.

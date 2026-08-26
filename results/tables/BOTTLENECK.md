@@ -1,8 +1,6 @@
 # Forecast information-value protocol
 
-Standalone repo. Frozen numbers in `data/frozen/`.
-
-## River (1-day)
+## River climate (1-day)
 | basin | climate | routing_NSE | lstm_attention_NSE | ablation_delta | attn_minus_routing |
 | --- | --- | --- | --- | --- | --- |
 | potomac | humid_mid_atlantic | 0.861 | 0.93 | 0.02 | 0.07 |
@@ -10,6 +8,13 @@ Standalone repo. Frozen numbers in `data/frozen/`.
 | willamette | humid_pacific_nw | 0.97 | 0.99 | 0.003 | 0.02 |
 | animas | snowmelt_rockies | 0.98 | 0.988 | 0.01 | 0.008 |
 | verde | semiarid_southwest | 0.605 | 0.385 | 0.061 | -0.221 |
+
+## River P90 CSI and oracle precipitation
+| horizon | routing_CSI | xgb_CSI | attn_CSI | pers_CSI | attn_POD | attn_FAR | attn_obs_NSE | attn_oracle_NSE | delta_NSE |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.0 | 0.622 | 0.745 | 0.75 | 0.56 | 0.846 | 0.132 | 0.932 | 0.931 | -0.001 |
+| 3.0 | 0.2 | 0.333 | 0.288 | 0.162 | 0.385 | 0.464 | 0.444 | 0.565 | 0.121 |
+| 7.0 | 0.038 | 0.08 | 0.26 | 0.064 | 0.333 | 0.458 | 0.218 | 0.414 | 0.196 |
 
 ## Ocean multi-lead
 | lead_mo | model | RMSE | skill_vs_persist | skill_vs_clim | hypoxia_F1 | CSI |
@@ -30,8 +35,15 @@ Standalone repo. Frozen numbers in `data/frozen/`.
 | 3 | st_transformer | 9.81 | 0.767 | -2.551 | 0.537 | 0.367 |
 | 3 | hybrid_clim_st | 5.222 | 0.934 | -0.006 | 0.703 | 0.542 |
 
+## Ocean coastal MAE
+| bin | n_cells | mae | p90 |
+| --- | --- | --- | --- |
+| low | 648 | 2.968 | 4.228 |
+| mid | 648 | 2.947 | 4.114 |
+| high | 864 | 3.299 | 4.89 |
+
 ## Bottlenecks
 | domain | bottleneck | evidence |
 | --- | --- | --- |
-| river | usable precipitation foresight + unsaturated autocorrelation | James 1-d ablation ΔNSE +0.13; Willamette ~0; Verde LSTM can lose to routing |
-| ocean | time-varying oxygen / coastal structure at lead ≥2 months | lead-1 ST beats clim; lead-2 hybrid/clim wins; Argo history +35% RMSE |
+| river | precipitation foresight after day 1; climate-conditional gauge value | Oracle precip ΔNSE ≈ 0 at 1 d, +0.12 at 3 d, +0.20 at 7 d; James ΔNSE +0.13, Willamette ≈ 0; Verde LSTM NSE 0.39 < routing 0.61 |
+| ocean | learned anomaly skill collapses at lead ≥ 2 months; errors concentrate coastally | Lead-1 ST RMSE 3.88 vs clim 5.30; lead-2 hybrid 5.08 ≈ clim 5.23; Argo +35% RMSE; coastal MAE 3.30 vs 2.95 offshore |
