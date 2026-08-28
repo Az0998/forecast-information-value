@@ -1,0 +1,12 @@
+{
+  "instrument": "XGBoost + lagged-upstream linear routing + persistence",
+  "threshold": "training-period 90th percentile of Q_target",
+  "oracle": "perfect future catchment precip as extra XGB features",
+  "basins": [
+    "verde",
+    "james",
+    "potomac",
+    "willamette",
+    "animas"
+  ]
+}

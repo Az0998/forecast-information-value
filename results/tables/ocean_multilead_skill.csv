@@ -1,4 +1,4 @@
-lead_mo,model,RMSE,skill_vs_persist,skill_vs_clim,hypoxia_F1,CSI
+lead_mo,model,RMSE,skill_vs_persist,skill_vs_clim,lowtail_F1,CSI
 1,persistence,8.265,0.0,-1.434,0.6,0.429
 1,climatology,5.298,0.589,0.0,0.671,0.505
 1,lstm_anomaly,5.311,0.587,-0.005,0.665,0.498

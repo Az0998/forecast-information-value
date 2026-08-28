@@ -1,12 +1,10 @@
-# Paper B — in progress
+# Paper B — Ecological Informatics package
 
-Four-panel plate and EcoInf draft are in `paper/` and `results/figures/`.
+Science chain is frozen. Do not add a network. Do not wait for GOBAI or Chinese nested Q.
 
-Remaining (optional before submit):
+Upload: `paper/HOW_TO_SUBMIT_ECOINF.md`
 
-- [ ] GOBAI-O2 if targeting AIES instead of EcoInf
-- [ ] One non-US river on the same climate protocol (general significance)
-- [ ] Paste `manuscript_draft.md` into the Ecological Informatics Word/LaTeX template
-- [ ] English proofread
+Optional later (revision or AIES, not this submission):
 
-Do not add a new network. Do not resubmit to HSJ.
+- Nested Chinese raw daily Q if a licensed in-situ set appears
+- GOBAI-O2 if targeting process claims or AIES

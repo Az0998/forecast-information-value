@@ -20,9 +20,9 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="brand">Paper B · Ecological Informatics / AIES</div>
+    <div class="brand">Ecological Informatics manuscript · frozen protocol artifact</div>
     <h1>Information bottlenecks in mid-range environmental forecasts</h1>
-    <p class="lead">River gauge value is climate-conditional. Weekly river skill is capped by rain foresight. Shelf oxygen skill yields to climatology after one month under sparse history.</p>
+    <p class="lead">River gauge value is climate-conditional. Model class flips with lead time. Weekly river skill is capped by usable rain, not oracle rain. Shelf oxygen skill yields to climatology after one month under sparse history.</p>
     <p>
       <a class="btn" href="https://github.com/Az0998/forecast-information-value">GitHub</a>
       <a class="btn ghost" href="https://github.com/Az0998/maskview-aquatic-protocol">Sister paper A</a>
@@ -34,13 +34,18 @@
     <table>
       <tr><th>Test</th><th>Result</th></tr>
       <tr><td>James vs Willamette 1-d ΔNSE</td><td>+0.13 vs ≈0</td></tr>
-      <tr><td>Verde LSTM vs routing NSE</td><td>0.39 vs 0.61 (routing wins)</td></tr>
-      <tr><td>Oracle rain ΔNSE 1 / 3 / 7 d</td><td>≈0 / +0.12 / +0.20</td></tr>
-      <tr><td>P90 CSI learned 1 / 7 d</td><td>0.75 / 0.26 (routing 7 d = 0.04)</td></tr>
+      <tr><td>Verde 1-d NSE</td><td>XGB 0.66 > routing 0.61 > LSTM 0.38</td></tr>
+      <tr><td>Verde 3/7-d XGB NSE</td><td>negative; routing stays positive</td></tr>
+      <tr><td>GFS QPF vs oracle (Potomac 3 d)</td><td>QPF −0.03; oracle 0.58</td></tr>
+      <tr><td>LSTM oracle ΔNSE 1 / 3 / 7 d</td><td>≈0 / +0.12 / +0.20</td></tr>
+      <tr><td>P90 CSI LSTM 1 / 7 d (Potomac)</td><td>0.75 / 0.26 (routing 7 d = 0.04)</td></tr>
       <tr><td>ECS O₂ RMSE lead-1 ST vs clim</td><td>3.88 vs 5.30 µmol kg⁻¹</td></tr>
       <tr><td>Lead-2</td><td>hybrid 5.08 ≈ climatology 5.23</td></tr>
+      <tr><td>Bow (Canada) 1-d NSE</td><td>routing 0.98 ≈ persist 0.97 > XGB 0.87</td></tr>
+      <tr><td>OLS rain ceiling 3 d</td><td>Potomac +0.07 · Verde +0.08 · Animas ~0 · Bow ~0</td></tr>
+      <tr><td>Bow ice-free P90 CSI</td><td>unchanged; 74/74 events in open water</td></tr>
     </table>
-    <footer>Senjie Zhang · Lanzhou University · MIT · Do not resubmit to HSJ</footer>
+    <footer>Senjie Zhang · Lanzhou University · MIT License · numbers locked to data/frozen/</footer>
   </div>
 </body>
 </html>

@@ -1,0 +1,4 @@
+horizon,n_test_all,n_test_open,ice_frac_test,all_routing_NSE,all_xgb_NSE,all_xgb_CSI,open_routing_NSE,open_xgb_NSE,open_xgb_CSI,open_routing_CSI,open_n_events
+1,756,646,0.146,0.976,0.871,0.886,0.973,0.856,0.886,0.855,74
+3,756,646,0.146,0.896,0.916,0.783,0.885,0.907,0.783,0.795,74
+7,756,646,0.146,0.729,0.857,0.618,0.704,0.843,0.618,0.505,74

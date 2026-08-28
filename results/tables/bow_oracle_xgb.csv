@@ -1,0 +1,4 @@
+basin,horizon,xgb_obs_NSE,xgb_oracle_NSE,delta_NSE,n_aligned
+bow,1,0.871,0.865,-0.006,755
+bow,3,0.916,0.466,-0.45,753
+bow,7,0.856,0.72,-0.135,749

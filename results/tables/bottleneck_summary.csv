@@ -1,3 +1,3 @@
 domain,bottleneck,evidence
-river,precipitation foresight after day 1; climate-conditional gauge value,"Oracle precip ΔNSE ≈ 0 at 1 d, +0.12 at 3 d, +0.20 at 7 d; James ΔNSE +0.13, Willamette ≈ 0; Verde LSTM NSE 0.39 < routing 0.61"
-ocean,learned anomaly skill collapses at lead ≥ 2 months; errors concentrate coastally,Lead-1 ST RMSE 3.88 vs clim 5.30; lead-2 hybrid 5.08 ≈ clim 5.23; Argo +35% RMSE; coastal MAE 3.30 vs 2.95 offshore
+river,climate × model-class × lead; rain foresight after day 1,James 1-d upstream ΔNSE +0.13 vs Willamette ≈0; Verde 1-d XGB 0.664 > routing 0.605 > LSTM 0.385; Verde 3/7-d XGB NSE negative; Willamette 7-d LSTM−routing -0.149; GFS QPF 3-d NSE −0.03 while oracle +0.58; LSTM P90 CSI still Potomac-only
+ocean,learned anomaly skill collapses at lead ≥ 2 months; errors coastal,"Lead-1 ST RMSE 3.88 vs clim 5.30; lead-2 hybrid 5.08 ≈ clim 5.23; Argo +35% RMSE; coastal MAE 3.30 vs 2.95 offshore; low-tail events are training p10 (195 µmol kg⁻¹), not hypoxia <60"
