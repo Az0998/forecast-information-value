@@ -1,5 +1,5 @@
-• Protocol: domain baseline, event score, information ceiling, failure locus.
-• Gauge value is climate-conditional: James ΔNSE +0.13 vs Willamette ~0.
-• Verde: XGB beats routing at 1 d; LSTM and 3–7 d XGB do not.
-• OLS rain ceiling is ~0 on snowmelt (Animas and Bow).
-• Oxygen Transformer wins at 1 month; climatology takes over later.
+• Nested operational gauges are not CAMELS lumped rainfall–runoff.
+• Extra-gauge value saturates once 1-day linear routing is already skilful.
+• Event CSI can disagree with NSE; both are required on nested networks.
+• A 3-day OLS rain ceiling is climate-conditional, not encoder-conditional.
+• A regime regression on 21 USGS/WSC triads, with uncertainty, is the result.

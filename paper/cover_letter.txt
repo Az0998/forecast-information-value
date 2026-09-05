@@ -1,19 +1,19 @@
 Dear Editor,
 
-Please consider our manuscript
+Please consider the research article
 
-“Information bottlenecks, not architectures: a cross-media protocol for mid-range environmental forecasts”
+“Nested gauges are not lumped rainfall–runoff: a regime model of information value on operational river networks”
 
-for publication in Ecological Informatics as a Research paper.
+for publication in Hydrology and Earth System Sciences.
 
-The manuscript is not another LSTM-on-a-basin or Transformer-on-a-shelf case study. It proposes a four-part evaluation grammar (domain-simple baseline, event score, information ceiling, failure locus) and applies that grammar to five climate-contrasting USGS rivers, a nested Water Survey of Canada Bow River transfer, and a WOA-informed East China Sea shelf oxygen cube. Learned models add decision skill only while the limiting input is present.
+The paper is not a new encoder and not a CAMELS rainfall–runoff long short-term memory study. Nested operational gauges are a different object from lumped precipitation-to-discharge catchments. We estimate a regime of information value — when lagged-upstream linear routing already saturates next-day skill, when an extra gauge still helps, when unused catchment rain still has a 3-day ceiling, and when flood critical success index disagrees with Nash–Sutcliffe efficiency — on 21 documented USGS and Water Survey of Canada nested networks with block-bootstrap uncertainty.
 
-Headline tests: (i) upstream-gauge value is climate-conditional (James ΔNSE +0.13 versus Willamette ≈0); (ii) on the semi-arid Verde, XGBoost beats linear routing at 1 day while LSTM-Attention loses, then XGBoost collapses at 3–7 days; (iii) operational GFS precipitation is negative at 3 days on the Potomac while oracle rain still lifts the ceiling; (iv) an ordinary-least-squares precipitation ceiling is ~0 on snowmelt (Animas, Bow) and positive on the Potomac and Verde, so the snowmelt result is not an XGBoost artefact; (v) a spatiotemporal Transformer beats climatology at 1-month oxygen lead and should yield to a hybrid/climatology thereafter, with residuals concentrated on the coastal shelf. Low-oxygen scores use the training 10th percentile on a development cube, not hypoxia <60 µmol kg⁻¹.
+We confirm this is not a dual submission. A companion missingness study (Mask-View) is a separate manuscript. Code and frozen tables: https://github.com/Az0998/forecast-information-value
 
-We confirm this is not a dual submission with the companion Mask-View missingness manuscript. Code and frozen tables: https://github.com/Az0998/forecast-information-value
+Suggested subject areas: catchment hydrology; floods and flood forecasting; hydrological modelling.
 
 Sincerely,
-Senjie Zhang (张森捷)
+Senjie Zhang
 Lanzhou University
 Lanzhou 730000, Gansu, China
 Email: 3079099853@qq.com

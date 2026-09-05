@@ -1,6 +1,6 @@
 # Information bottlenecks, not architectures: a cross-media protocol for mid-range environmental forecasts
 
-**Target:** *Ecological Informatics* (research article)  
+**Target:** *Journal of Hydroinformatics* (research article). Do not resubmit to Ecological Informatics.  
 **Backup:** *Artificial Intelligence for the Earth Systems* (AMS), if the oxygen cube is later replaced by GOBAI-O2  
 **Authors:** Senjie Zhang (张森捷)¹,*  
 **Affiliation:** ¹ Lanzhou University, Lanzhou 730000, Gansu, China  
@@ -8,7 +8,7 @@
 **Code:** https://github.com/Az0998/forecast-information-value  
 **Sister protocol paper (missingness):** https://github.com/Az0998/maskview-aquatic-protocol
 
-**Status:** Ecological Informatics submission package (28 August 2026). Rebuild Word with `python scripts/build_ecoinf_manuscript.py`. Word file is the submission artifact; this markdown is the working draft.
+**Status:** JHI rewrite after EcoInf desk rejection (1 September 2026). Rebuild Word with `python scripts/build_ecoinf_manuscript.py`. Word file is the submission artifact; this markdown is the working draft. Methods, station IDs and reproduction commands are in the Word file and `REPRODUCE.md`.
 
 ---
 
