@@ -1,42 +1,37 @@
-# Forecast information-value protocol
+# 嵌套站网预报信息价值
 
-Public frozen artifact for the Ecological Informatics manuscript
-*Information bottlenecks, not architectures: a cross-media protocol for mid-range environmental forecasts*.
+> **一句话：** 嵌套水文站网里，上游站 / 降水对次日流量预报「还有没有用」——什么时候有增益、什么时候已经被路由基线吃满。个人兴趣自学；曾投 HSJ（HSJ-2026-0755）被退（偏案例），后续手稿面向 HESS，**尚无录用**。
 
-[![pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://az0998.github.io/forecast-information-value/)
+**仓库：** https://github.com/Az0998/forecast-information-value  
+**作者：** 张森捷（Senjie Zhang），兰州大学（`3079099853@qq.com`）
+
+| 项目 | 说明 |
+|------|------|
+| 对象 | 21 组 USGS / 加拿大 WSC 嵌套站网（非 CAMELS 集总产流） |
+| 方法 | 滞后上游线性路由、树模型、持续性基线；洪水 CSI + bootstrap |
+| 复现 | `scripts/build_hess_*` 与冻结表 |
+| 相关 | 早期同主题实验仓 [hydro-ml-paper](https://github.com/Az0998/hydro-ml-paper) |
+
+---
+
+# Nested information-value atlas
+
+River-only research article aimed at *Hydrology and Earth System Sciences*.
 
 **Author:** Senjie Zhang, Lanzhou University (`3079099853@qq.com`)
 
-Mid-range environmental skill is an **information bottleneck**: extra model capacity does not help once the limiting input is missing. Numbers in the Word file are locked to `data/frozen/`.
+Operational nested gauges are not CAMELS lumped rainfall–runoff. The object is a regime model of information value on 21 USGS/WSC nested networks with uncertainty.
 
-## Quick start
+## Rebuild the Word/PDF package
 
 ```bash
-git clone https://github.com/Az0998/forecast-information-value.git
-cd forecast-information-value
 pip install -r requirements.txt
-python scripts/build_bottleneck_tables.py
-python scripts/build_ecoinf_manuscript.py
+python scripts/build_hess_figures.py
+python scripts/build_hess_manuscript.py
 python scripts/verify_submission.py
 ```
 
-- Manuscript: `paper/EcoInf_information_value_manuscript.docx`
-- Highlights: `paper/highlights.txt`
-- Cover letter: `paper/cover_letter.txt`
-- Upload steps: `paper/HOW_TO_SUBMIT_ECOINF.md`
-
-## Layout
-
-```
-data/frozen/river   USGS climate ladder, Bow (WSC) transfer, OLS rain ceiling
-data/frozen/ocean   ECS multi-lead skill, sparse-history ceiling, coastal MAE
-scripts/            tables, figures, Word builder, submission checks
-results/            regenerated tables and protocol figures
-paper/              EcoInf submission files
-docs/               GitHub Pages
-```
-
-Sibling experiment engines (`hydro-ml-paper`, `ocean-do-forecast`) produced the frozen snapshots. This repository is sufficient to rebuild tables, figures, and the Word manuscript.
+Upload files and Copernicus steps: `paper/HOW_TO_SUBMIT_HESS.md`
 
 ## License
 
