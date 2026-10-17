@@ -20,7 +20,7 @@
 | **英文摘要** | 最短入口 | [paper/abstract.txt](./paper/abstract.txt) |
 | **英文手稿草稿** | 在线可读全文 | [paper/manuscript_draft.md](./paper/manuscript_draft.md) |
 | **Cover letter** | 投稿说明 | [paper/cover_letter.txt](./paper/cover_letter.txt) |
-| **HESS 投稿 Word/PDF**（若已推送） | 当前主攻叙事 | `paper/HESS_nested_information_value.docx` / `.pdf` |
+| **HESS 投稿 Word/PDF** | 当前主攻叙事 | [paper/HESS_nested_information_value.docx](./paper/HESS_nested_information_value.docx) / [.pdf](./paper/HESS_nested_information_value.pdf) |
 | **早期同主题实验** | Potomac 协议仓 | [hydro-ml-paper](https://github.com/Az0998/hydro-ml-paper) |
 
 ## 与 Mask-View 的关系
@@ -31,12 +31,10 @@
 
 ```bash
 pip install -r requirements.txt
-python scripts/build_hess_figures.py
-python scripts/build_hess_manuscript.py
 python scripts/verify_submission.py
 ```
 
-详见 `paper/HOW_TO_SUBMIT_HESS.md`、`REPRODUCE.md`（若存在）。
+投稿材料见 [`paper/`](./paper/)。
 
 ## License
 
